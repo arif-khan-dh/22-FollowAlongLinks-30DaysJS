@@ -29,8 +29,10 @@ body {
     width: 90%;
     display: flex;
     flex-flow: column nowrap;
-    padding-top: 3rem;
+    padding-top: 4rem;
     color: white;
+    min-width: 342px;
+    max-width: 910px;
 }
 
 ul {
@@ -39,9 +41,20 @@ ul {
     flex-flow: row wrap;
     justify-content: space-around;
 
-
     li {
         display: inline-block;
+        
+        @media (max-width: 486px) {
+            &:nth-child(5) {
+                margin-top: 1rem;
+            }
+        }
+
+        @media (max-width: 390px) {
+            &:nth-child(n+4) {
+                margin-top: 1rem;
+            }
+        }
     }
 
     a {
