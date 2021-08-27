@@ -43,18 +43,19 @@ ul {
 
     li {
         display: inline-block;
+        margin-top: 1rem;
         
-        @media (max-width: 486px) {
-            &:nth-child(5) {
-                margin-top: 1rem;
-            }
-        }
+        // @media (max-width: 486px) {
+        //     &:nth-child(5) {
+        //         margin-top: 1rem;
+        //     }
+        // }
 
-        @media (max-width: 390px) {
-            &:nth-child(n+4) {
-                margin-top: 1rem;
-            }
-        }
+        // @media (max-width: 390px) {
+        //     &:nth-child(n+4) {
+        //         margin-top: 1rem;
+        //     }
+        // }
     }
 
     a {
